@@ -25,6 +25,14 @@ let mongoose = require('mongoose');
 let db = require('./db');
 
 //point mongoose to the db uri
+// mongoose.connect(
+//   process.env.MONGODB_URI || 'mongodb://localhost:27017/business_contacts',
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   },
+// );
+
 mongoose.connect(db.URI, { useNewUrlParser: true, useUnifiedTopology: true }); // REMOVE AFTER COMMA
 
 
